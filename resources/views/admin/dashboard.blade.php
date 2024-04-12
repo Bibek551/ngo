@@ -15,7 +15,7 @@
                         <div class="card-body">
                             <h5 class="card-title text-primary">Hello Admin!</h5>
                             <p class="mb-4">
-                                Welcome to <span class="fw-bold">Ngo</span> admin panel.
+                                Welcome to <span class="fw-bold">NGO</span> admin panel.
                             </p>
                         </div>
                     </div>

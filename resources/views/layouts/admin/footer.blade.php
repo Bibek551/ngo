@@ -4,7 +4,7 @@
             ©
             {{ date('Y') }}
             ,
-            <a class="footer-link fw-bolder" href="{{ route('dashboard') }}" target="_blank">Dreamcity Holidays</a>
+            <a class="footer-link fw-bolder" href="{{ route('dashboard') }}" target="_blank">NGO</a>
         </div>
 
     </div>

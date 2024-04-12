@@ -1,9 +1,12 @@
 <aside class="layout-menu menu-vertical menu bg-menu-theme" id="layout-menu">
     <div class="app-brand demo d-flex justify-content-center">
         <a class="app-brand-link" href="{{ route('dashboard') }}">
-            <img class=""
-                src="{{ $settings['site_main_logo'] ? asset('admin/images/setting/' . $settings['site_main_logo']) : asset('admin/images/logo.png') }}"
-                alt="" height="120px" width="230px">
+            @if ($settings['site_main_logo'])
+                <img src="{{ asset('admin/images/setting/' . $settings['site_main_logo']) }}" alt="logo" height="120px"
+                    width="230px">
+            @else
+                <h1>NGO</h1>
+            @endif
         </a>
         <a class="layout-menu-toggle menu-link text-large ms-auto d-block d-xl-none" href="javascript:void(0);">
             <i class="bx bx-chevron-left bx-sm align-middle"></i>

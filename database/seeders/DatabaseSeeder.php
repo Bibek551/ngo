@@ -36,9 +36,9 @@ class DatabaseSeeder extends Seeder
             ['map', 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3532.0107398278033!2d85.3091379762703!3d27.716954676177043!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb194c6c187511%3A0x90398cc153754317!2sParadise%20InfoTech%20-%20IT%20Company%20in%20Nepal!5e0!3m2!1sen!2snp!4v1706593862490!5m2!1sen!2snp'],
             ['site_copyright', '2022 All right Reserved'],
             ['site_contact', '9800000000'],
-            ['site_email', 'info@dreamcity.com.np'],
+            ['site_email', 'info@ngo.com.np'],
             ['site_contact2', '+01 5553696'],
-            ['site_email2', 'dreamcity@gmail.com'],
+            ['site_email2', 'ngo@gmail.com'],
             ['apply_now_link', null],
             ['office_hour', '10 am - 5 pm'],
             ['office_location', 'Bharatpur, Chitwan'],
@@ -62,9 +62,9 @@ class DatabaseSeeder extends Seeder
             ['faq_section_slogan', 'Frequently Asked Questions'],
             ['faq_section_description', 'Get every single answer here.'],
 
-            ['homepage_seo_title', 'Dreamcity Holidays'],
-            ['homepage_seo_description', 'Dreamcity Holidays'],
-            ['homepage_seo_keywords', 'Dreamcity Holidays'],
+            ['homepage_seo_title', 'NGO'],
+            ['homepage_seo_description', 'NGO'],
+            ['homepage_seo_keywords', 'NGO'],
             ['fav_icon', null],
 
             ['about_section_title', 'A Few Words About the Manpower'],
@@ -103,34 +103,34 @@ class DatabaseSeeder extends Seeder
 
             ['contact_section_title', 'Experience the Evolution of Our Consultancy'],
             ['contact_section_description', 'We love to hear from you. Our friendly team is always here to chat'],
-            ['contact_seo_title', 'Dreamcity Holidays - Contact'],
-            ['contact_seo_keywords', 'Dreamcity Holidays'],
-            ['contact_seo_description', 'Dreamcity Holidays Dreamcity Holidays'],
+            ['contact_seo_title', 'NGO - Contact'],
+            ['contact_seo_keywords', 'NGO'],
+            ['contact_seo_description', 'NGO NGO'],
             ['contact_image', null],
 
             ['feature_section_title', 'Our Best Features'],
             ['feature_section_description', 'Special wedding garments are often worn, and the ceremony is sometimes followed by a wedding reception. Music, poetry.'],
             ['feature_section_image', null],
 
-            ['countries_seo_title', 'Dreamcity Holidays - countries'],
+            ['countries_seo_title', 'NGO - countries'],
             ['countries_seo_keywords', 'countries'],
-            ['countries_seo_description', 'countries Dreamcity Holidays'],
+            ['countries_seo_description', 'countries NGO'],
 
-            ['blogs_seo_title', 'Dreamcity Holidays - blogs'],
+            ['blogs_seo_title', 'NGO - blogs'],
             ['blogs_seo_keywords', 'blogs'],
-            ['blogs_seo_description', 'blogs Dreamcity Holidays'],
+            ['blogs_seo_description', 'blogs NGO'],
 
-            ['services_seo_title', 'Dreamcity Holidays - services'],
+            ['services_seo_title', 'NGO - services'],
             ['services_seo_keywords', 'services'],
-            ['services_seo_description', 'services Dreamcity Holidays'],
+            ['services_seo_description', 'services NGO'],
 
-            ['courses_seo_title', 'Dreamcity Holidays - courses'],
+            ['courses_seo_title', 'NGO - courses'],
             ['courses_seo_keywords', 'courses'],
-            ['courses_seo_description', 'courses Dreamcity Holidays'],
+            ['courses_seo_description', 'courses NGO'],
 
-            ['demands_seo_title', 'Dreamcity Holidays - demands'],
+            ['demands_seo_title', 'NGO - demands'],
             ['demands_seo_keywords', 'demands'],
-            ['demands_seo_description', 'demands Dreamcity Holidays'],
+            ['demands_seo_description', 'demands NGO'],
         ];
 
         if (count($items)) {
@@ -151,8 +151,6 @@ class DatabaseSeeder extends Seeder
         $pages = [
             ['title' => 'Privacy Policy', 'description' => 'Lorem ipsum dolor sit amet consectetur. Enim nulla at ultrices mus porttitor. Cursus sed eu neque fringilla sed maecenas lorem vulputate tristique. Mollis massa nulla vulputate eget imperdiet nc fringilla fermentum hendrerit sagittis praesent nulla nulla. Erat nascetur ut tortor nam faucibus amet tincidunt luctus nibh. Elementum massa parturient pellentesque egestas potenti et. Diam vulputate convallis sed purus eros ac amet erat risus. Lectus quisque elementum a velit urna nulla. Sit augue vestibulum gravida ante duis vitae. Rhoncus donec mi sed metus sed cursus sed. Cursus molestie vel nisi cursus amet. A viverra magnis mattis ultrices diam dapibus. Quam amet purus lacus vitae sapien viverra sit sapien. Aenean tincidunt orci diam at amet commodo eget.', 'short_description' => null, 'slug' => 'privacy-policy', 'created_at' => date('Y-m-d h:i:s'), 'updated_at' => date('Y-m-d h:i:s')],
             ['title' => 'Terms and Conditions', 'description' => 'Lorem ipsum dolor sit amet consectetur. Enim nulla at ultrices mus porttitor. Cursus sed eu neque fringilla sed maecenas lorem vulputate tristique. Mollis massa nulla vulputate eget imperdiet nc fringilla fermentum hendrerit sagittis praesent nulla nulla. Erat nascetur ut tortor nam faucibus amet tincidunt luctus nibh. Elementum massa parturient pellentesque egestas potenti et. Diam vulputate convallis sed purus eros ac amet erat risus. Lectus quisque elementum a velit urna nulla. Sit augue vestibulum gravida ante duis vitae. Rhoncus donec mi sed metus sed cursus sed. Cursus molestie vel nisi cursus amet. A viverra magnis mattis ultrices diam dapibus. Quam amet purus lacus vitae sapien viverra sit sapien. Aenean tincidunt orci diam at amet commodo eget.', 'short_description' => null, 'slug' => 'terms-and-conditions', 'created_at' => date('Y-m-d h:i:s'), 'updated_at' => date('Y-m-d h:i:s')],
-            // ['title' => 'About Us', 'description' => 'Lorem ipsum dolor sit amet consectetur. Enim nulla at ultrices mus porttitor. Cursus sed eu neque fringilla sed maecenas lorem vulputate tristique. Mollis massa nulla vulputate eget imperdiet nc fringilla fermentum hendrerit sagittis praesent nulla nulla. Erat nascetur ut tortor nam faucibus amet tincidunt luctus nibh. Elementum massa parturient pellentesque egestas potenti et. Diam vulputate convallis sed purus eros ac amet erat risus. Lectus quisque elementum a velit urna nulla. Sit augue vestibulum gravida ante duis vitae. Rhoncus donec mi sed metus sed cursus sed. Cursus molestie vel nisi cursus amet. A viverra magnis mattis ultrices diam dapibus. Quam amet purus lacus vitae sapien viverra sit sapien. Aenean tincidunt orci diam at amet commodo eget.', 'short_description' => null, 'slug' => 'about-us', 'created_at' => date('Y-m-d h:i:s'), 'updated_at' => date('Y-m-d h:i:s')],
-            // ['title' => 'Why Choose Us', 'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis eveniet quo magnam voluptatibus magni sed hic omnis alias impedit pariatur necessitatibus perferendis repellat libero sequi, aut excepturi! Vitae, dolores optio?pariatur necessitatibus perferendis repellat libero sequi, aut excepturi! Vitae, dolores optio?Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis eveniet quo magnam voluptatibus magni sed hic omnis alias impedit pariatur necessitatibus perferendis repellat libero sequi, aut excepturi! Vitae, dolores optio? pariatur necessitatibus perferendis repellat libero sequi, aut excepturi! Vitae, dolores optio?', 'short_description' => null, 'slug' => 'why-choose-us', 'created_at' => date('Y-m-d h:i:s'), 'updated_at' => date('Y-m-d h:i:s')],
         ];
 
         Page::insert($pages);

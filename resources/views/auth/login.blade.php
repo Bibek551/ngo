@@ -7,7 +7,7 @@
     <meta name="viewport"
         content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
 
-    <title>Dreamcity Holidays</title>
+    <title>NGO</title>
 
     <meta name="description" content="" />
 
@@ -54,7 +54,7 @@
                             </a>
                         </div>
                         <!-- /Logo -->
-                        <h4 class="mb-2">Welcome to Dreamcity Holidays!</h4>
+                        <h4 class="mb-2">Welcome to NGO</h4>
                         <p class="mb-4">Please sign-in to your account</p>
 
                         <form class="mb-3" id="formAuthentication" action="{{ route('login') }}" method="POST">

@@ -19,5 +19,4 @@ class Volunteer extends Model
         'nationality',
         'gender',
     ];
-    
 }

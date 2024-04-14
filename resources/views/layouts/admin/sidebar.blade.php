@@ -58,6 +58,19 @@
             </a>
         </li>
 
+        <li class="menu-item {{ Request::segment(2) == 'actions' ? 'active' : '' }}">
+            <a class="menu-link" href="{{ route('admin.actions.index') }}">
+                <i class='menu-icon bx bxs-help-circle  '></i>
+                <div data-i18n="Basic">Get Involve</div>
+            </a>
+        </li>
+        <li class="menu-item {{ Request::segment(2) == 'helps' ? 'active' : '' }}">
+            <a class="menu-link" href="{{ route('admin.helps.index') }}">
+                <i class='menu-icon bx bx-help-circle'></i>
+                <div data-i18n="Basic">Help-us</div>
+            </a>
+        </li>
+
         {{-- <li class="menu-item {{ Request::segment(2) == 'partners' ? 'active' : '' }}">
             <a class="menu-link" href="{{ route('admin.partners.index') }}">
                 <i class="menu-icon tf-icons bx bx-layer-plus"></i>

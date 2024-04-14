@@ -12,8 +12,13 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 Route::get('blogs', [ApiController::class, 'BlogIndex']);
 Route::get('blog/{slug}', [ApiController::class, 'BlogSingle']);
 
+Route::get('actions', [ApiController::class, 'ActionIndex']);
+Route::get('action/{slug}', [ApiController::class, 'ActionSingle']);
+
 Route::get('services', [ApiController::class, 'ServiceIndex']);
 // Route::get('/service/{slug}', [ApiController::class, 'serviceSingle']);
+
+Route::get('helps', [ApiController::class, 'HelpIndex']);
 
 Route::get('testimonials', [ApiController::class, 'TestimonialIndex']);
 

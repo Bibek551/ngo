@@ -8,6 +8,8 @@ use App\Models\Service;
 use App\Models\Donation;
 use App\Models\Blog;
 use App\Models\Inquiry;
+use App\Models\Action;
+use App\Models\Help;
 use App\Models\Volunteer;
 use App\Models\OurTeam;
 use App\Models\Slider;
@@ -92,6 +94,63 @@ class ApiController extends Controller
             return response()->json(['statusCode' => 401, 'error' => true, 'message' => $e->getMessage()]);
         }
     }
+    
+    public function ActionIndex()
+    {
+        try {
+            $actions = Action::latest()->get();
+
+            foreach ($actions as $action) {
+                $action['image'] = $action->image ? asset('admin/images/action/' . $action->image) : NULL;
+            }
+
+            return response()->json([
+                "statusCode" => 200,
+                "error" => false,
+                "data" => $actions,
+                'message' => 'Retrieved successfully'
+            ]);
+        } catch (\Exception $e) {
+            return response()->json(['statusCode' => 401, 'error' => true, 'message' => $e->getMessage()]);
+        }
+    }
+
+    public function ActionSingle($slug)
+    {
+        try {
+            $action = Action::where('slug', $slug)->first();
+            $action['image'] = $action->image ? asset('admin/images/action/' . $action->image) : NULL;
+            return response()->json([
+                "statusCode" => 200,
+                "error" => false,
+                "data" => $action,
+                'message' => 'Retrieved successfully'
+            ]);
+        } catch (\Exception $e) {
+            return response()->json(['statusCode' => 401, 'error' => true, 'message' => $e->getMessage()]);
+        }
+    }
+
+     public function HelpIndex()
+    {
+        try {
+            $helps = Help::latest()->get();
+
+            foreach ($helps as $help) {
+                $help['image'] = $help->image ? asset('admin/images/help/' . $help->image) : NULL;
+            }
+
+            return response()->json([
+                "statusCode" => 200,
+                "error" => false,
+                "data" => $helps,
+                'message' => 'Retrieved successfully'
+            ]);
+        } catch (\Exception $e) {
+            return response()->json(['statusCode' => 401, 'error' => true, 'message' => $e->getMessage()]);
+        }
+    }
+
 
     public function pageDetail($slug)
     {
@@ -165,20 +224,6 @@ class ApiController extends Controller
         }
     }
 
-    // public function FaqIndex(){
-    //    try {
-    //         $faqs = Faq::oldest('order')->get();
-
-    //         return response()->json([
-    //             "statusCode" => 200,
-    //             "error" => false,
-    //             "data" => $faqs,
-    //             'message' => 'Retrieved successfully'
-    //         ]);
-    //     } catch (\Exception $e) {
-    //         return response()->json(['statusCode' => 401, 'error' => true, 'message' => $e->getMessage()]);
-    //     }
-    // }
 
     public function SliderIndex()
     {
@@ -199,25 +244,6 @@ class ApiController extends Controller
             return response()->json(['statusCode' => 401, 'error' => true, 'message' => $e->getMessage()]);
         }
     }
-
-    // public function GalleryIndex(){
-    //    try {
-    //         $galleries = Gallery::latest()->get();
-
-    //         foreach($galleries as $gallery){
-    //             $gallery['image'] = $gallery->image?asset('admin/images/gallery/'.$gallery->image):NULL;
-    //         }
-
-    //         return response()->json([
-    //             "statusCode" => 200,
-    //             "error" => false,
-    //             "data" => $galleries,
-    //             'message' => 'Retrieved successfully'
-    //         ]);
-    //     } catch (\Exception $e) {
-    //         return response()->json(['statusCode' => 401, 'error' => true, 'message' => $e->getMessage()]);
-    //     }
-    // }
 
     public function SettingIndex()
     {

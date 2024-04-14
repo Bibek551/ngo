@@ -167,61 +167,7 @@
                                                             placeholder="Enter Something ...">{{ $settings['service_section_description'] ?? '' }}</textarea>
                                                     </div>
                                                 </div>
-                                                <div class="col-md-6">
-                                                    <div class="form-group mb-3">
-                                                        <label for="country_section_title">Country Section Title</label>
-                                                        <input class="form-control br-8" type="text"
-                                                            name="country_section_title"
-                                                            value="{{ $settings['country_section_title'] ?? '' }}"
-                                                            placeholder="">
-                                                    </div>
-                                                </div>
-                                                {{-- <div class="col-md-6">
-                                                    <div class="form-group mb-3">
-                                                        <label for="country_section_slogan">Country Section Slogan</label>
-                                                        <input class="form-control br-8" type="text"
-                                                            name="country_section_slogan"
-                                                            value="{{ $settings['country_section_slogan'] ?? '' }}"
-                                                            placeholder="">
-                                                    </div>
-                                                </div> --}}
-                                                {{-- <div class="col-md-12">
-                                                    <div class="form-group mb-3">
-                                                        <label for="country_section_description">Country Section
-                                                            Description</label>
-                                                        <textarea class="form-control br-8" name="country_section_description" rows="4"
-                                                            placeholder="Enter Something ...">{{ $settings['country_section_description'] ?? '' }}</textarea>
-                                                    </div>
-                                                </div> --}}
-                                                {{-- 
-                                                <div class="col-md-6">
-                                                    <div class="form-group mb-3">
-                                                        <label for="faq_section_title">Faq Section
-                                                            Title</label>
-                                                        <input class="form-control br-8" type="text"
-                                                            name="faq_section_title"
-                                                            value="{{ $settings['faq_section_title'] ?? '' }}"
-                                                            placeholder="">
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-6">
-                                                    <div class="form-group mb-3">
-                                                        <label for="faq_section_slogan">Faq Section
-                                                            Slogan</label>
-                                                        <input class="form-control br-8" type="text"
-                                                            name="faq_section_slogan"
-                                                            value="{{ $settings['faq_section_slogan'] ?? '' }}"
-                                                            placeholder="">
-                                                    </div>
-                                                </div> --}}
 
-                                                {{-- <div class="col-md-12">
-                                                    <div class="form-group mb-3">
-                                                        <label for="faq_section_description">Faq Section
-                                                            Description</label>
-                                                        <textarea class="form-control br-8" name="faq_section_description" rows="4" placeholder="Enter Something ...">{{ $settings['faq_section_description'] ?? '' }}</textarea>
-                                                    </div>
-                                                </div> --}}
                                                 <div class="col-md-6">
                                                     <div class="form-group mb-3">
                                                         <label for="testimonial_section_title">Testimonial Section
@@ -232,7 +178,7 @@
                                                             placeholder="">
                                                     </div>
                                                 </div>
-                                                {{-- <div class="col-md-6">
+                                                <div class="col-md-6">
                                                     <div class="form-group mb-3">
                                                         <label for="testimonial_section_slogan">Testimonial Section
                                                             Slogan</label>
@@ -241,7 +187,8 @@
                                                             value="{{ $settings['testimonial_section_slogan'] ?? '' }}"
                                                             placeholder="">
                                                     </div>
-                                                </div> --}}
+                                                </div>
+
                                                 <div class="col-md-6">
                                                     <div class="form-group mb-3">
                                                         <label for="team_section_title">Team Section Title</label>
@@ -251,7 +198,8 @@
                                                             placeholder="">
                                                     </div>
                                                 </div>
-                                                {{-- <div class="col-md-6">
+
+                                                <div class="col-md-6">
                                                     <div class="form-group mb-3">
                                                         <label for="team_section_slogan">Team Section Slogan</label>
                                                         <input class="form-control br-8" type="text"
@@ -259,25 +207,50 @@
                                                             value="{{ $settings['team_section_slogan'] ?? '' }}"
                                                             placeholder="">
                                                     </div>
-                                                </div> --}}
-                                                {{-- <div class="col-md-6">
+                                                </div>
+
+                                                <div class="col-md-6">
                                                     <div class="form-group mb-3">
-                                                        <label for="course_section_title">Demands Section Title</label>
+                                                        <label for="action_section_title">Action Section Title</label>
                                                         <input class="form-control br-8" type="text"
-                                                            name="course_section_title"
-                                                            value="{{ $settings['course_section_title'] ?? '' }}"
+                                                            name="action_section_title"
+                                                            value="{{ $settings['action_section_title'] ?? '' }}"
                                                             placeholder="">
                                                     </div>
                                                 </div>
+
                                                 <div class="col-md-6">
                                                     <div class="form-group mb-3">
-                                                        <label for="course_section_slogan">Demands Section Slogan</label>
+                                                        <label for="action_section_description">Action Section
+                                                            Slogan</label>
                                                         <input class="form-control br-8" type="text"
-                                                            name="course_section_slogan"
-                                                            value="{{ $settings['course_section_slogan'] ?? '' }}"
+                                                            name="action_section_description"
+                                                            value="{{ $settings['action_section_description'] ?? '' }}"
                                                             placeholder="">
                                                     </div>
-                                                </div> --}}
+                                                </div>
+
+                                                <div class="col-md-6">
+                                                    <div class="form-group mb-3">
+                                                        <label for="donate_section_title">Donate Section Title</label>
+                                                        <input class="form-control br-8" type="text"
+                                                            name="donate_section_title"
+                                                            value="{{ $settings['donate_section_title'] ?? '' }}"
+                                                            placeholder="">
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-md-6">
+                                                    <div class="form-group mb-3">
+                                                        <label for="donate_section_description">Donate Section
+                                                            Slogan</label>
+                                                        <input class="form-control br-8" type="text"
+                                                            name="donate_section_description"
+                                                            value="{{ $settings['donate_section_description'] ?? '' }}"
+                                                            placeholder="">
+                                                    </div>
+                                                </div>
+
                                                 <div class="col-md-6">
                                                     <div class="form-group mb-3">
                                                         <label for="blog_section_title">Blog Section Title</label>
@@ -287,7 +260,7 @@
                                                             placeholder="">
                                                     </div>
                                                 </div>
-                                                {{-- <div class="col-md-6">
+                                                <div class="col-md-6">
                                                     <div class="form-group mb-3">
                                                         <label for="blog_section_slogan">Blog Section Slogan</label>
                                                         <input class="form-control br-8" type="text"
@@ -295,7 +268,7 @@
                                                             value="{{ $settings['blog_section_slogan'] ?? '' }}"
                                                             placeholder="">
                                                     </div>
-                                                </div> --}}
+                                                </div>
                                                 <div class="col-md-6">
                                                     <div class="form-group mb-3">
                                                         <label for="homepage_seo_title">Homepage Seo Title</label>
@@ -340,6 +313,41 @@
                                                             placeholder="Enter About Title">
                                                     </div>
                                                 </div>
+                                                <div class="col-md-12">
+                                                    <div class="form-group mb-3">
+                                                        <label for="about_section_description">About Section
+                                                            Description</label>
+                                                        <textarea class="form-control br-8" name="about_section_description" rows="4"
+                                                            placeholder="Enter Something ...">{{ $settings['about_section_description'] ?? '' }}</textarea>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="form-group mb-3">
+                                                        <label for="about_section_image">About Section
+                                                            Image </label>
+                                                        <div class="custom-file">
+                                                            <input class="about_section_image" id="about_section_image"
+                                                                data-default-file="{{ $settings['about_section_image'] != null ? asset('admin/images/setting') . '/' . $settings['about_section_image'] : null }}"
+                                                                data-show-remove="false"
+                                                                data-allowed-file-extensions='["jpg", "jpeg","png","bmp","gif","svg","webp"]'
+                                                                type="file" name="about_section_image">
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-md-6">
+                                                    <div class="form-group mb-3">
+                                                        <label for="about_section_image2">About Section Second
+                                                            Image </label>
+                                                        <div class="custom-file">
+                                                            <input class="about_section_image2" id="about_section_image2"
+                                                                data-default-file="{{ $settings['about_section_image2'] != null ? asset('admin/images/setting') . '/' . $settings['about_section_image2'] : null }}"
+                                                                data-show-remove="false"
+                                                                data-allowed-file-extensions='["jpg", "jpeg","png","bmp","gif","svg","webp"]'
+                                                                type="file" name="about_section_image2">
+                                                        </div>
+                                                    </div>
+                                                </div>
                                                 {{-- <div class="col-md-6">
                                                     <div class="form-group mb-3">
                                                         <label for="about_section_slogan">About Section Slogan</label>
@@ -349,14 +357,6 @@
                                                             placeholder="about Slogan">
                                                     </div>
                                                 </div> --}}
-                                                <div class="col-md-12">
-                                                    <div class="form-group mb-3">
-                                                        <label for="about_section_description">About Section
-                                                            Description</label>
-                                                        <textarea class="form-control br-8" name="about_section_description" rows="4"
-                                                            placeholder="Enter Something ...">{{ $settings['about_section_description'] ?? '' }}</textarea>
-                                                    </div>
-                                                </div>
 
                                                 <div class="col-md-4">
                                                     <div class="form-group mb-3">
@@ -386,59 +386,89 @@
                                                     </div>
                                                 </div>
 
-                                                {{-- <div class="col-md-4">
+                                                <div class="col-md-6">
                                                     <div class="form-group mb-3">
-                                                        <label for="student_count_description">Student Count
-                                                            Description</label>
-                                                        <textarea class="form-control br-8" name="student_count_description" rows="4"
-                                                            placeholder="Enter Something ...">{{ $settings['student_count_description'] ?? '' }}</textarea>
-                                                    </div>
-                                                </div> --}}
-
-                                                {{-- <div class="col-md-4">
-                                                    <div class="form-group mb-3">
-                                                        <label for="experienced_description">Experienced
-                                                            Description</label>
-                                                        <textarea name="experienced_description" rows="4" class="form-control br-8" placeholder="Enter Something ...">{{ $settings['experienced_description'] ?? '' }}</textarea>
-                                                    </div>
-                                                </div> --}}
-
-                                                {{-- <div class="col-md-4">
-                                                    <div class="form-group mb-3">
-                                                        <label for="country_count_description">Review Count
-                                                            Description</label>
-                                                        <textarea class="form-control br-8" name="country_count_description" rows="4"
-                                                            placeholder="Enter Something ...">{{ $settings['country_count_description'] ?? '' }}</textarea>
-                                                    </div>
-                                                </div> --}}
-                                                {{-- <div class="col-md-6">
-                                                    <div class="form-group mb-3">
-                                                        <label for="about_vision_title">Our vision Slogan</label>
+                                                        <label for="mission_title">Our Mission Title</label>
                                                         <input class="form-control br-8" type="text"
-                                                            name="about_vision_title"
-                                                            value="{{ $settings['about_vision_title'] ?? '' }}"
-                                                            placeholder="about Slogan">
+                                                            name="mission_title"
+                                                            value="{{ $settings['mission_title'] ?? '' }}"
+                                                            placeholder="">
                                                     </div>
                                                 </div>
                                                 <div class="col-md-12">
                                                     <div class="form-group mb-3">
-                                                        <label for="about_vision_description">Our vision
+                                                        <label for="mission_description">Our Mission
                                                             Description</label>
-                                                        <textarea class="form-control br-8" name="about_vision_description" rows="4"
-                                                            placeholder="Enter Something ...">{{ $settings['about_vision_description'] ?? '' }}</textarea>
+                                                        <textarea class="form-control br-8" name="mission_description" rows="3" placeholder="Enter Something ...">{{ $settings['mission_description'] ?? '' }}</textarea>
                                                     </div>
-                                                </div> --}}
-
+                                                </div>
                                                 <div class="col-md-6">
                                                     <div class="form-group mb-3">
-                                                        <label for="about_section_image">About Section
+                                                        <label for="vision_title">Our vision Title</label>
+                                                        <input class="form-control br-8" type="text"
+                                                            name="vision_title"
+                                                            value="{{ $settings['vision_title'] ?? '' }}" placeholder="">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-12">
+                                                    <div class="form-group mb-3">
+                                                        <label for="vision_description">Our vision
+                                                            Description</label>
+                                                        <textarea class="form-control br-8" name="vision_description" rows="3" placeholder="Enter Something ...">{{ $settings['vision_description'] ?? '' }}</textarea>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="form-group mb-3">
+                                                        <label for="objective_title">Our Objectice Title</label>
+                                                        <input class="form-control br-8" type="text"
+                                                            name="objective_title"
+                                                            value="{{ $settings['objective_title'] ?? '' }}"
+                                                            placeholder="">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-12">
+                                                    <div class="form-group mb-3">
+                                                        <label for="objective_description">Our vision
+                                                            Description</label>
+                                                        <textarea class="form-control br-8" name="objective_description" rows="3" placeholder="Enter Something ...">{{ $settings['objective_description'] ?? '' }}</textarea>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="form-group mb-3">
+                                                        <label for="mission_image">Our Mission
                                                             Image </label>
                                                         <div class="custom-file">
-                                                            <input class="about_section_image" id="about_section_image"
-                                                                data-default-file="{{ $settings['about_section_image'] != null ? asset('admin/images/setting') . '/' . $settings['about_section_image'] : null }}"
+                                                            <input class="mission_image" id="mission_image"
+                                                                data-default-file="{{ $settings['mission_image'] != null ? asset('admin/images/setting') . '/' . $settings['mission_image'] : null }}"
                                                                 data-show-remove="false"
                                                                 data-allowed-file-extensions='["jpg", "jpeg","png","bmp","gif","svg","webp"]'
-                                                                type="file" name="about_section_image">
+                                                                type="file" name="mission_image">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="form-group mb-3">
+                                                        <label for="vision_image">Our Vision
+                                                            Image </label>
+                                                        <div class="custom-file">
+                                                            <input class="vision_image" id="vision_image"
+                                                                data-default-file="{{ $settings['vision_image'] != null ? asset('admin/images/setting') . '/' . $settings['vision_image'] : null }}"
+                                                                data-show-remove="false"
+                                                                data-allowed-file-extensions='["jpg", "jpeg","png","bmp","gif","svg","webp"]'
+                                                                type="file" name="vision_image">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="form-group mb-3">
+                                                        <label for="objective_image">Our Objective
+                                                            Image </label>
+                                                        <div class="custom-file">
+                                                            <input class="objective_image" id="objective_image"
+                                                                data-default-file="{{ $settings['objective_image'] != null ? asset('admin/images/setting') . '/' . $settings['objective_image'] : null }}"
+                                                                data-show-remove="false"
+                                                                data-allowed-file-extensions='["jpg", "jpeg","png","bmp","gif","svg","webp"]'
+                                                                type="file" name="objective_image">
                                                         </div>
                                                     </div>
                                                 </div>
@@ -454,8 +484,8 @@
                                                                 type="file" name="country_page_banner">
                                                         </div>
                                                     </div>
-                                                </div>
-                                                <div class="col-md-6">
+                                                </div> --}}
+                                                {{-- <div class="col-md-6">
                                                     <div class="form-group mb-3">
                                                         <label for="course_page_banner">Faqs Image</span></label>
                                                         <div class="custom-file">
@@ -539,20 +569,6 @@
 
                                                 <div class="col-md-6">
                                                     <div class="form-group mb-3">
-                                                        <label for="gallery_page_banner">Gallery Page Banner<span>(1465 x
-                                                                450px)</span></label>
-                                                        <div class="custom-file">
-                                                            <input class="gallery_page_banner" id="gallery_page_banner"
-                                                                data-default-file="{{ $settings['gallery_page_banner'] != null ? asset('admin/images/setting') . '/' . $settings['gallery_page_banner'] : null }}"
-                                                                data-show-remove="false"
-                                                                data-allowed-file-extensions='["jpg", "jpeg","png","bmp","gif","svg","webp"]'
-                                                                type="file" name="gallery_page_banner">
-                                                        </div>
-                                                    </div>
-                                                </div>
-
-                                                <div class="col-md-6">
-                                                    <div class="form-group mb-3">
                                                         <label for="team_page_banner">Teams Page Banner<span>(1465 x
                                                                 450px)</span></label>
                                                         <div class="custom-file">
@@ -564,6 +580,76 @@
                                                         </div>
                                                     </div>
                                                 </div>
+
+                                                <div class="col-md-6">
+                                                    <div class="form-group mb-3">
+                                                        <label for="getinvolve_page_banner">Involve Page Banner</label>
+                                                        <div class="custom-file">
+                                                            <input class="getinvolve_page_banner"
+                                                                id="getinvolve_page_banner"
+                                                                data-default-file="{{ $settings['getinvolve_page_banner'] != null ? asset('admin/images/setting') . '/' . $settings['getinvolve_page_banner'] : null }}"
+                                                                data-show-remove="false"
+                                                                data-allowed-file-extensions='["jpg", "jpeg","png","bmp","gif","svg","webp"]'
+                                                                type="file" name="getinvolve_page_banner">
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-md-6">
+                                                    <div class="form-group mb-3">
+                                                        <label for="membership_page_banner">Membership Page Banner</label>
+                                                        <div class="custom-file">
+                                                            <input class="membership_page_banner"
+                                                                id="membership_page_banner"
+                                                                data-default-file="{{ $settings['membership_page_banner'] != null ? asset('admin/images/setting') . '/' . $settings['membership_page_banner'] : null }}"
+                                                                data-show-remove="false"
+                                                                data-allowed-file-extensions='["jpg", "jpeg","png","bmp","gif","svg","webp"]'
+                                                                type="file" name="membership_page_banner">
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-md-6">
+                                                    <div class="form-group mb-3">
+                                                        <label for="volunteer_page_banner">Volunteer Page Banner</label>
+                                                        <div class="custom-file">
+                                                            <input class="volunteer_page_banner"
+                                                                id="volunteer_page_banner"
+                                                                data-default-file="{{ $settings['volunteer_page_banner'] != null ? asset('admin/images/setting') . '/' . $settings['volunteer_page_banner'] : null }}"
+                                                                data-show-remove="false"
+                                                                data-allowed-file-extensions='["jpg", "jpeg","png","bmp","gif","svg","webp"]'
+                                                                type="file" name="volunteer_page_banner">
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-md-6">
+                                                    <div class="form-group mb-3">
+                                                        <label for="support_page_banner">Support Page Banner</label>
+                                                        <div class="custom-file">
+                                                            <input class="support_page_banner" id="support_page_banner"
+                                                                data-default-file="{{ $settings['support_page_banner'] != null ? asset('admin/images/setting') . '/' . $settings['support_page_banner'] : null }}"
+                                                                data-show-remove="false"
+                                                                data-allowed-file-extensions='["jpg", "jpeg","png","bmp","gif","svg","webp"]'
+                                                                type="file" name="support_page_banner">
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-md-6">
+                                                    <div class="form-group mb-3">
+                                                        <label for="awareness_page_banner">Awareness Page Banner</label>
+                                                        <div class="custom-file">
+                                                            <input class="awareness_page_banner"
+                                                                id="awareness_page_banner"
+                                                                data-default-file="{{ $settings['awareness_page_banner'] != null ? asset('admin/images/setting') . '/' . $settings['awareness_page_banner'] : null }}"
+                                                                data-show-remove="false"
+                                                                data-allowed-file-extensions='["jpg", "jpeg","png","bmp","gif","svg","webp"]'
+                                                                type="file" name="awareness_page_banner">
+                                                        </div>
+                                                    </div>
+                                                </div>
+
                                                 <div class="col-md-6">
                                                     <div class="form-group mb-3">
                                                         <label for="singlepages_page_banner">Singlepages Page
@@ -1013,6 +1099,39 @@
             }
         });
 
+        $('.about_section_image2').dropify({
+            messages: {
+                'default': '',
+                'replace': '',
+                'remove': 'Remove',
+                'error': 'Ooops, something wrong happended.'
+            }
+        });
+        $('.mission_image').dropify({
+            messages: {
+                'default': '',
+                'replace': '',
+                'remove': 'Remove',
+                'error': 'Ooops, something wrong happended.'
+            }
+        });
+        $('.vision_image').dropify({
+            messages: {
+                'default': '',
+                'replace': '',
+                'remove': 'Remove',
+                'error': 'Ooops, something wrong happended.'
+            }
+        });
+        $('.objective_image').dropify({
+            messages: {
+                'default': '',
+                'replace': '',
+                'remove': 'Remove',
+                'error': 'Ooops, something wrong happended.'
+            }
+        });
+
         $('.feature_section_image').dropify({
             messages: {
                 'default': '',
@@ -1040,14 +1159,6 @@
             }
         });
 
-        $('.country_page_banner').dropify({
-            messages: {
-                'default': '',
-                'replace': '',
-                'remove': 'Remove',
-                'error': 'Ooops, something wrong happended.'
-            }
-        });
 
         $('.blog_page_banner').dropify({
             messages: {
@@ -1066,14 +1177,7 @@
                 'error': 'Ooops, something wrong happended.'
             }
         });
-        $('.gallery_page_banner').dropify({
-            messages: {
-                'default': '',
-                'replace': '',
-                'remove': 'Remove',
-                'error': 'Ooops, something wrong happended.'
-            }
-        });
+
         $('.team_page_banner').dropify({
             messages: {
                 'default': '',
@@ -1082,6 +1186,52 @@
                 'error': 'Ooops, something wrong happended.'
             }
         });
+
+        $('.getinvolve_page_banner').dropify({
+            messages: {
+                'default': '',
+                'replace': '',
+                'remove': 'Remove',
+                'error': 'Ooops, something wrong happended.'
+            }
+        });
+
+        $('.membership_page_banner').dropify({
+            messages: {
+                'default': '',
+                'replace': '',
+                'remove': 'Remove',
+                'error': 'Ooops, something wrong happended.'
+            }
+        });
+
+        $('.volunteer_page_banner').dropify({
+            messages: {
+                'default': '',
+                'replace': '',
+                'remove': 'Remove',
+                'error': 'Ooops, something wrong happended.'
+            }
+        });
+
+        $('.support_page_banner').dropify({
+            messages: {
+                'default': '',
+                'replace': '',
+                'remove': 'Remove',
+                'error': 'Ooops, something wrong happended.'
+            }
+        });
+
+        $('.awareness_page_banner').dropify({
+            messages: {
+                'default': '',
+                'replace': '',
+                'remove': 'Remove',
+                'error': 'Ooops, something wrong happended.'
+            }
+        });
+
         $('.singlepages_page_banner').dropify({
             messages: {
                 'default': '',

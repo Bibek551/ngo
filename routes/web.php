@@ -1,22 +1,24 @@
 <?php
 
 use App\Http\Controllers\Admin\AchievementController;
+use App\Http\Controllers\Admin\ActionController;
 use App\Http\Controllers\Admin\AuthController;
 use App\Http\Controllers\Admin\BlogController;
 use App\Http\Controllers\Admin\BookController;
 use App\Http\Controllers\Admin\BranchController;
 use App\Http\Controllers\Admin\CountryController;
 use App\Http\Controllers\Admin\CourseController;
+use App\Http\Controllers\Admin\DownloadController;
 use App\Http\Controllers\Admin\DemandController;
 use App\Http\Controllers\Admin\DonationController;
-use App\Http\Controllers\Admin\VolunteerController;
-use App\Http\Controllers\Admin\DownloadController;
 use App\Http\Controllers\Admin\FaqController;
 use App\Http\Controllers\Admin\BookingFormController;
 use App\Http\Controllers\Admin\FeatureController;
 use App\Http\Controllers\Admin\GalleryController;
+use App\Http\Controllers\Admin\HelpController;
 use App\Http\Controllers\Admin\InquiryController;
 use App\Http\Controllers\Admin\OurteamController;
+use App\Http\Controllers\Admin\VolunteerController;
 
 use App\Http\Controllers\Admin\PageController;
 use App\Http\Controllers\Admin\PartnerController;
@@ -51,22 +53,17 @@ Route::get('/dashboard', [App\Http\Controllers\HomeController::class, 'index'])-
 
 //CMS routes
 Route::group(['prefix' => 'admin', 'as' => 'admin.', 'middleware' => 'auth'], function () {
-    // Route::resource('countries', CountryController::class);
-    // Route::resource('courses', CourseController::class);
-    // Route::resource('demands', DemandController::class);
+
     Route::resource('blogs', BlogController::class);
     Route::resource('services', ServiceController::class);
     // Route::resource('partners', PartnerController::class);
     Route::resource('sliders', SliderController::class);
-    // Route::resource('branches', BranchController::class);
-    // Route::resource('universities', UniversityController::class);
-    // Route::resource('features', FeatureController::class);
 
     Route::resource('ourteams', OurteamController::class);
+    Route::resource('actions', ActionController::class);
+    Route::resource('helps', HelpController::class);
     // Route::resource('faqs', FaqController::class);
-    // Route::resource('downloads', DownloadController::class);
     Route::resource('users', UserController::class);
-    // Route::resource('achievements', AchievementController::class);
     Route::resource('testimonials', TestimonialController::class);
     Route::resource('pages', PageController::class);
     Route::resource('socialmedias', SocialmediaController::class);

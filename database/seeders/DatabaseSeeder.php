@@ -43,9 +43,6 @@ class DatabaseSeeder extends Seeder
             ['office_hour', '10 am - 5 pm'],
             ['office_location', 'Bharatpur, Chitwan'],
 
-
-            ['course_section_title', 'Our Demands ?'],
-            ['course_section_slogan', 'Current popular demands ?'],
             ['service_section_title', 'OUR SERVICES'],
             ['service_section_slogan', 'Services We Provide?'],
             ['service_section_description', 'lorem ipsumbh dsif sahdgf sjdgfjsad fgshadk f ?'],
@@ -99,25 +96,12 @@ class DatabaseSeeder extends Seeder
             ['awareness_page_banner', null],
             ['singlepages_page_banner', null],
 
-            ['video_section_title', "We're Qeducato & We're Diffirent"],
-            ['video_section_description', 'Our community is being called to reimagine the future. As the only university where a renowned design school colleges'],
-            ['video_section_image', null],
-            ['video_section_link', 'https://www.youtube.com/watch?v=vdMPP47nLhc'],
-
             ['contact_section_title', 'Experience the Evolution of Our Consultancy'],
             ['contact_section_description', 'We love to hear from you. Our friendly team is always here to chat'],
             ['contact_seo_title', 'NGO - Contact'],
             ['contact_seo_keywords', 'NGO'],
             ['contact_seo_description', 'NGO NGO'],
             ['contact_image', null],
-
-            ['feature_section_title', 'Our Best Features'],
-            ['feature_section_description', 'Special wedding garments are often worn, and the ceremony is sometimes followed by a wedding reception. Music, poetry.'],
-            ['feature_section_image', null],
-
-            ['countries_seo_title', 'NGO - countries'],
-            ['countries_seo_keywords', 'countries'],
-            ['countries_seo_description', 'countries NGO'],
 
             ['blogs_seo_title', 'NGO - blogs'],
             ['blogs_seo_keywords', 'blogs'],
@@ -127,13 +111,6 @@ class DatabaseSeeder extends Seeder
             ['services_seo_keywords', 'services'],
             ['services_seo_description', 'services NGO'],
 
-            ['courses_seo_title', 'NGO - courses'],
-            ['courses_seo_keywords', 'courses'],
-            ['courses_seo_description', 'courses NGO'],
-
-            ['demands_seo_title', 'NGO - demands'],
-            ['demands_seo_keywords', 'demands'],
-            ['demands_seo_description', 'demands NGO'],
         ];
 
         if (count($items)) {
@@ -165,38 +142,6 @@ class DatabaseSeeder extends Seeder
 
         Service::insert($services);
 
-        $courses = [
-            ['name' => 'Security guard', 'status' => 1, 'short_description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae voluptatem numquam similique dolorem sapiente voluptas sint unde corporis voluptatum.', 'description' => null, 'image' => null,  'slug' => 'ielts', 'created_at' => date('Y-m-d h:i:s'), 'updated_at' => date('Y-m-d h:i:s')],
-            ['name' => 'Kitchen Helper', 'status' => 1, 'short_description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae voluptatem numquam similique dolorem sapiente voluptas sint unde corporis voluptatum.', 'description' => null, 'image' => null,  'slug' => 'tofel', 'created_at' => date('Y-m-d h:i:s'), 'updated_at' => date('Y-m-d h:i:s')],
-            ['name' => 'Guide', 'status' => 1, 'short_description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae voluptatem numquam similique dolorem sapiente voluptas sint unde corporis voluptatum.', 'description' => null, 'image' => null, 'slug' => 'sat', 'created_at' => date('Y-m-d h:i:s'), 'updated_at' => date('Y-m-d h:i:s')],
-        ];
-
-        Course::insert($courses);
-
-        $demands = [
-            ['name' => 'Security guard', 'status' => 1, 'short_description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae voluptatem numquam similique dolorem sapiente voluptas sint unde corporis voluptatum.', 'description' => null, 'image' => null,  'slug' => 'ielts', 'created_at' => date('Y-m-d h:i:s'), 'updated_at' => date('Y-m-d h:i:s')],
-            ['name' => 'Kitchen Helper', 'status' => 1, 'short_description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae voluptatem numquam similique dolorem sapiente voluptas sint unde corporis voluptatum.', 'description' => null, 'image' => null,  'slug' => 'tofel', 'created_at' => date('Y-m-d h:i:s'), 'updated_at' => date('Y-m-d h:i:s')],
-            ['name' => 'Guide', 'status' => 1, 'short_description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae voluptatem numquam similique dolorem sapiente voluptas sint unde corporis voluptatum.', 'description' => null, 'image' => null, 'slug' => 'sat', 'created_at' => date('Y-m-d h:i:s'), 'updated_at' => date('Y-m-d h:i:s')],
-        ];
-
-        Demand::insert($demands);
-
-        $countries = [
-            ['name' => 'AUSTRALIA', 'status' => 1, 'short_description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae voluptatem numquam similique dolorem sapiente voluptas sint unde corporis voluptatum.', 'description' => null, 'image' => null, 'banner_image' => null,  'slug' => 'australia', 'created_at' => date('Y-m-d h:i:s'), 'updated_at' => date('Y-m-d h:i:s')],
-            ['name' => 'USA', 'status' => 1, 'short_description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae voluptatem numquam similique dolorem sapiente voluptas sint unde corporis voluptatum.', 'description' => null, 'image' => null, 'banner_image' => null,  'slug' => 'usa', 'created_at' => date('Y-m-d h:i:s'), 'updated_at' => date('Y-m-d h:i:s')],
-            ['name' => 'CANADA', 'status' => 1, 'short_description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae voluptatem numquam similique dolorem sapiente voluptas sint unde corporis voluptatum.', 'description' => null, 'image' => null, 'banner_image' => null, 'slug' => 'canada', 'created_at' => date('Y-m-d h:i:s'), 'updated_at' => date('Y-m-d h:i:s')],
-        ];
-
-        Country::insert($countries);
-
-
-        $features = [
-            ['title' => 'Skilled Teachers', 'status' => 1, 'short_description' => 'Special wedding garments are often worn, and the ceremony is sttimes followed by a wedding reception. Music, poetry, prayers, or readings from.', 'description' => null, 'image' => null, 'logo' => null, 'slug' => 'skilled-teachers', 'created_at' => date('Y-m-d h:i:s'), 'updated_at' => date('Y-m-d h:i:s')],
-            ['title' => 'Affordable Courses', 'status' => 1, 'short_description' => 'Special wedding garments are often worn, and the ceremony is sttimes followed by a wedding reception. Music, poetry, prayers, or readings from.', 'description' => null, 'image' => null, 'logo' => null, 'slug' => 'affordable-courses', 'created_at' => date('Y-m-d h:i:s'), 'updated_at' => date('Y-m-d h:i:s')],
-            ['title' => 'Efficient & Flexible', 'status' => 1, 'short_description' => 'Special wedding garments are often worn, and the ceremony is sttimes followed by a wedding reception. Music, poetry, prayers, or readings from.', 'description' => null, 'image' => null, 'logo' => null, 'slug' => 'efficient-&-flexible', 'created_at' => date('Y-m-d h:i:s'), 'updated_at' => date('Y-m-d h:i:s')],
-        ];
-
-        Feature::insert($features);
 
         $faqs = [
             ['title' => 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.Assumenda, quaerat.',   'description' => 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.Assumenda, quaerat.Lorem ipsum dolor, sit amet consectetur adipisicing elit.Assumenda, quaerat.', 'created_at' => date('Y-m-d h:i:s'), 'updated_at' => date('Y-m-d h:i:s')],
@@ -237,21 +182,7 @@ class DatabaseSeeder extends Seeder
 
         OurTeam::insert($teams);
 
-        $branches = [
-            ['location' => 'Kathmandu', 'order' => '1', 'email' => 'info@neeckathmandu.com',   'phone' => '01-0522222', 'created_at' => date('Y-m-d h:i:s'), 'updated_at' => date('Y-m-d h:i:s')],
-            ['location' => 'Lalitpur', 'order' => '3', 'email' => 'info@neeclalitpur.com',   'phone' => '01-0522222', 'created_at' => date('Y-m-d h:i:s'), 'updated_at' => date('Y-m-d h:i:s')],
-            ['location' => 'Bhaktapur', 'order' => '4', 'email' => 'info@neecbhaktapur.com',   'phone' => '01-0522222', 'created_at' => date('Y-m-d h:i:s'), 'updated_at' => date('Y-m-d h:i:s')],
-        ];
 
-        Branch::insert($branches);
-
-        $universities = [
-            ['name' => 'University of Toronto',  'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae voluptatem numquam similique dolorem sapiente voluptas sint unde corporis voluptatum.', 'short_description' => null, 'image' => null, 'other_image' => null, 'country' => 'Canada', 'slug' => 'university-of-toronto', 'created_at' => date('Y-m-d h:i:s'), 'updated_at' => date('Y-m-d h:i:s')],
-            ['name' => 'University of Waterloo',  'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae voluptatem numquam similique dolorem sapiente voluptas sint unde corporis voluptatum.', 'short_description' => null, 'image' => null, 'other_image' => null, 'country' => 'Canada',  'slug' => 'university-of-waterloo', 'created_at' => date('Y-m-d h:i:s'), 'updated_at' => date('Y-m-d h:i:s')],
-            ['name' => 'McGrill University',  'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae voluptatem numquam similique dolorem sapiente voluptas sint unde corporis voluptatum.', 'short_description' => null, 'image' => null, 'other_image' => null, 'country' => 'Australia', 'slug' => 'mcGrill-university', 'created_at' => date('Y-m-d h:i:s'), 'updated_at' => date('Y-m-d h:i:s')],
-        ];
-
-        University::insert($universities);
 
         $sliders = [
             ['title' => 'Education is the best key success in life', 'slogan' => 'Welcome to Dreamcity Holidays', 'order' => 1, 'description' => 'Special wedding garments are often worn, and the ceremony is sttimes followed by a wedding reception. Music, poetry, prayers, or readings from.',  'image' => null,  'created_at' => date('Y-m-d h:i:s'), 'updated_at' => date('Y-m-d h:i:s')],

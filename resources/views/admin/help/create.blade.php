@@ -7,7 +7,7 @@
     <div class="col-xl">
         <div class="card mb-4">
             <div class="card-header d-flex justify-content-between align-items-center">
-                <h5 class="mb-0">Create help</h5>
+                <h5 class="mb-0">Create Help</h5>
                 <small class="text-muted float-end">
                     <a class="btn btn-primary" href="{{ route('admin.helps.index') }}"><i class="fa-solid fa-arrow-left"></i>
                         Back</a>

@@ -266,10 +266,34 @@ class ApiController extends Controller
                 $settings['about_section_image'] = asset('admin/images/setting/' . $settings['about_section_image']);
             }
 
+            if ($settings['about_section_image2']) {
+                $settings['about_section_image2'] = asset('admin/images/setting/' . $settings['about_section_image2']);
+            }
+
+            if ($settings['service_section_image']) {
+                $settings['service_section_image'] = asset('admin/images/setting/' . $settings['service_section_image']);
+            }
+
+            if ($settings['mission_image']) {
+                $settings['mission_image'] = asset('admin/images/setting/' . $settings['mission_image']);
+            }
+            
+            if ($settings['vision_image']) {
+                $settings['vision_image'] = asset('admin/images/setting/' . $settings['vision_image']);
+            }
+
+            if ($settings['objective_image']) {
+                $settings['objective_image'] = asset('admin/images/setting/' . $settings['objective_image']);
+            }
+
             if ($settings['about_page_banner']) {
                 $settings['about_page_banner'] = asset('admin/images/setting/' . $settings['about_page_banner']);
             }
 
+            if ($settings['about_section_image']) {
+                $settings['about_section_image'] = asset('admin/images/setting/' . $settings['about_section_image']);
+            }
+            
             if ($settings['blog_page_banner']) {
                 $settings['blog_page_banner'] = asset('admin/images/setting/' . $settings['blog_page_banner']);
             }
@@ -278,12 +302,32 @@ class ApiController extends Controller
                 $settings['service_page_banner'] = asset('admin/images/setting/' . $settings['service_page_banner']);
             }
 
-            if ($settings['gallery_page_banner']) {
-                $settings['gallery_page_banner'] = asset('admin/images/setting/' . $settings['gallery_page_banner']);
-            }
-
             if ($settings['team_page_banner']) {
                 $settings['team_page_banner'] = asset('admin/images/setting/' . $settings['team_page_banner']);
+            }
+
+            if ($settings['getinvolve_page_banner']) {
+                $settings['getinvolve_page_banner'] = asset('admin/images/setting/' . $settings['getinvolve_page_banner']);
+            }
+
+            if ($settings['membership_page_banner']) {
+                $settings['membership_page_banner'] = asset('admin/images/setting/' . $settings['membership_page_banner']);
+            }
+
+            if ($settings['volunteer_page_banner']) {
+                $settings['volunteer_page_banner'] = asset('admin/images/setting/' . $settings['volunteer_page_banner']);
+            }
+
+            if ($settings['support_page_banner']) {
+                $settings['support_page_banner'] = asset('admin/images/setting/' . $settings['support_page_banner']);
+            }
+            
+            if ($settings['awareness_page_banner']) {
+                $settings['awareness_page_banner'] = asset('admin/images/setting/' . $settings['awareness_page_banner']);
+            }
+
+            if ($settings['singlepages_page_banner']) {
+                $settings['singlepages_page_banner'] = asset('admin/images/setting/' . $settings['singlepages_page_banner']);
             }
 
             if ($settings['contact_image']) {

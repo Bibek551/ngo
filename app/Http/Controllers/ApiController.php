@@ -136,10 +136,6 @@ class ApiController extends Controller
         try {
             $helps = Help::latest()->get();
 
-            foreach ($helps as $help) {
-                $help['image'] = $help->image ? asset('admin/images/help/' . $help->image) : NULL;
-            }
-
             return response()->json([
                 "statusCode" => 200,
                 "error" => false,

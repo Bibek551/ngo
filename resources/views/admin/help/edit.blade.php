@@ -30,6 +30,17 @@
                                 @enderror
                             </div>
 
+                            <div class="mb-3">
+                                <label class="form-label" for="basic-default-fullname">Icon</label>
+                                <input class="form-control @error('icon') is-invalid @enderror" id=""
+                                    type="text" value="{{ old('icon', $help->icon) }}" name="icon" placeholder="">
+                                @error('icon')
+                                    <div class="invalid-feedback" style="display: block;">
+                                        {{ $message }}
+                                    </div>
+                                @enderror
+                            </div>
+
                             {{-- <div class="mb-3">
                                 <label class="form-label" for="basic-default-message">Description</label>
                                 <textarea class="form-control @error('description') is-invalid @enderror ckeditor" id="" name="description"
@@ -52,7 +63,7 @@
                                 @enderror
                             </div>
 
-                            <div class="mb-3 row">
+                            {{-- <div class="mb-3 row">
                                 <div class="col-md-6">
                                     <label class="form-label" for="basic-default-message">Image <span class="fw-bold">(jpeg
                                             or png)</span></label>
@@ -69,7 +80,7 @@
                                         </div>
                                     @enderror
                                 </div>
-                            </div>
+                            </div> --}}
                         </div>
                     </div>
 

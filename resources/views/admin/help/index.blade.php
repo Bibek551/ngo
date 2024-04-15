@@ -18,8 +18,8 @@
                     <thead>
                         <tr>
                             <th>SN</th>
-                            <th>Image</th>
                             <th>Title</th>
+                            <th>Icon</th>
                             <th>Short Description</th>
                             <th>Updated at</th>
                             <th>Actions</th>
@@ -29,14 +29,15 @@
                         @foreach ($helps as $key => $help)
                             <tr>
                                 <td><strong>{{ $key + $helps->firstItem() }}</strong></td>
-                                <td class="">
+                                {{-- <td class="">
                                     <a class="fancybox" data-fancybox="demo"
                                         href="{{ asset('admin/images/help/') }}/{{ $help->image ?: 'avatar.png' }}">
                                         <img src="{{ asset('admin/images/help/') }}/{{ $help->image ?: 'avatar.png' }}"
                                             alt="{{ $help->title }}" width="80px">
                                     </a>
-                                </td>
+                                </td> --}}
                                 <td><strong>{{ $help->title ?? '' }}</strong></td>
+                                <td>{{ $help->icon ?? '' }}</td>
                                 <td>{{ $help->short_description ?? '' }}</td>
                                 <td>{{ $help->updated_at->diffForHumans() }}</td>
                                 <td>

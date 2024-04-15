@@ -10,7 +10,7 @@ class Help extends Model
     use HasFactory;
     protected $fillable = [
         'title',
-        'image',
+        'icon',
         'description',
         'short_description',
         'slug',

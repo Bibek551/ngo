@@ -42,7 +42,7 @@ class HelpController extends Controller
     public function store(StoreHelpRequest $request)
     {
         $input = $request->all();
-        $input['image'] = $this->fileUpload($request, 'image');
+        // $input['image'] = $this->fileUpload($request, 'image');
 
         $help =  Help::create($input);
         $help->update(['slug' => Str::slug($request->title)]);
@@ -80,17 +80,17 @@ class HelpController extends Controller
      */
     public function update(UpdateHelpRequest $request, Help $help)
     {
-        $old_image = $help->image;
+        // $old_image = $help->image;
         $input = $request->all();
 
-        $image = $this->fileUpload($request, 'image');
+        // $image = $this->fileUpload($request, 'image');
 
-        if ($image) {
-            $this->removeFile($old_image);
-            $input['image'] = $image;
-        } else {
-            unset($input['image']);
-        }
+        // if ($image) {
+        //     $this->removeFile($old_image);
+        //     $input['image'] = $image;
+        // } else {
+        //     unset($input['image']);
+        // }
 
         $input['slug'] = Str::slug($request->title);
         $help->update($input);

@@ -24,7 +24,7 @@ class StoreHelpRequest extends FormRequest
         return [
             'title' => 'required',
             'short_description' => 'required',
-            'image' => 'required|image',
+            'icon' => 'required',
         ];
     }
 }

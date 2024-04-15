@@ -24,7 +24,7 @@ class UpdateHelpRequest extends FormRequest
         return [
             'title' => 'required',
             'short_description' => 'required',
-            'image' => 'image',
+            'icon' => 'required',
         ];
     }
 }

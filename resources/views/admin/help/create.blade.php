@@ -39,6 +39,16 @@
                                     </div>
                                 @enderror
                             </div> --}}
+                            <div class="mb-3">
+                                <label class="form-label" for="basic-default-fullname">Icon</label>
+                                <input class="form-control @error('icon') is-invalid @enderror" id=""
+                                    type="text" name="icon" value="{{ old('icon') }}" placeholder="">
+                                @error('icon')
+                                    <div class="invalid-feedback" style="display: block;">
+                                        {{ $message }}
+                                    </div>
+                                @enderror
+                            </div>
 
                             <div class="mb-3">
                                 <label class="form-label" for="basic-default-message">Short Description</label>
@@ -51,7 +61,7 @@
                                 @enderror
                             </div>
 
-                            <div class="mb-3 row">
+                            {{-- <div class="mb-3 row">
                                 <div class="col-md-6">
                                     <label class="form-label" for="basic-default-message">Image <span class="fw-bold">(jpeg
                                             or png)</span></label>
@@ -63,10 +73,10 @@
                                             {{ $message }}
                                         </div>
                                     @enderror
-                                </div>
-                            </div>
+                                </div> --}}
                         </div>
-                        {{-- <div class="col-md-4">
+                    </div>
+                    {{-- <div class="col-md-4">
                             <div class="card card-body seo my-3 shadow br-8 p-4">
                                 <div class="mb-3">
                                     <label class="form-label" for="basic-default-fullname">Seo Title</label>
@@ -114,12 +124,12 @@
                                 </div>
                             </div>
                         </div> --}}
-                    </div>
-
                     <button class="btn btn-primary" type="submit"><i class="fa-solid fa-plus"></i> Create</button>
-                </form>
             </div>
+
+            </form>
         </div>
+    </div>
     </div>
 @endsection
 @section('scripts')
